@@ -1,0 +1,60 @@
+##################################################################
+#                     EventManager config file                   #
+#                            By.: DaweY                          #
+##################################################################
+
+egghunt:
+  # - Egg Hunt - #
+  #Enable egg hunt
+  enabled: true
+  #Chat prefix
+  prefix: "&#fb0000H&#fa1700ú&#f92e00s&#f84500v&#f75c00é&#f67300t&#f48a00i &#f3a100E&#f2b800v&#f1cf00e&#f0e600n&#effd00t &7» "
+  #Egg spawn rate in minutes
+  egg-spawn-period: 60
+  #Egg spawn amount
+  egg-spawn-amount: 1
+  #Start date
+  start-date: "2023-04-01 00:00:00"
+  #End date
+  end-date: "2023-04-02 00:00:00"
+
+  #Egg location picker
+  place-egg-item:
+    id: "PLAYER_HEAD"
+    name: "&dHúsvéti tojás lerakó 2000"
+    lore:
+      - "&7Tedd le egy blockra ezt a fejet,"
+      - "&7Ahova szeretnéd, hogy tojások spawnoljanak"
+    tags:
+      - "unbreakable:1"
+    flags:
+      - "HIDE_ATTRIBUTES"
+      - "HIDE_UNBREAKABLE"
+    skullTextureID: "cb032da8e8c56cb8584588a0d681287ae6b955127f405fd346d7f85841ea7489"
+
+  #Egg textures
+  skull-textures:
+    - "fb734421bf980ba1b755c7a36f6dd6c9fa4977a1289c9fab46442420e245c636"
+    - "b154ba42d2822f56534e755827892e4719deef328abb59584be6967f25f48cb4"
+    - "5b3e03639922a51f268e856fbb0dd4c19d206878b1ce6b5addc6b9f8f42fadcd"
+    - "3066ac587165d50a1af1117cf38e4b06bc7ebbaf0c17dd24ffd44e9ff845e555"
+    - "9f55c505d7f00135b5f5225b75cd92ed12201cc95c41deed8a77da8fd6b7b963"
+
+  #Egg Rewards
+  random-rewards:
+    reward-1:
+      reward-name: "Cica"
+      commands:
+        - "eco give {player} 1000"
+        - "give {player} diamond 2"
+      chance: 10
+    reward-2:
+      reward-name: "Kutya"
+      commands:
+        - "eco give {player} 100"
+        - "give {player} diamond 1"
+      chance: 20
+
+
+# - Don't touch it if you don't know what it is - #
+texture-UUID: "85589349-a5ef-4644-85b2-347ec5c689e8"

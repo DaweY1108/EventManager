@@ -1,0 +1,12 @@
+name: EventManager
+version: '${project.version}'
+main: me.dawey.eventmanager.EventManager
+api-version: 1.13
+commands:
+  egghunt:
+    description: "Egg Hunt"
+    aliases: [eh]
+    tab-complete: 0
+permissions:
+  eventmanager.admin:
+    default: op
