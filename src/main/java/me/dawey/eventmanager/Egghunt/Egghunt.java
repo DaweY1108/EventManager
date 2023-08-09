@@ -206,7 +206,7 @@ public class Egghunt {
         clearAcessable();
         setRandomEggs();
         isStarted = true;
-        Bukkit.broadcastMessage(ColorFormat.format(getData().getEventPrefix() + " &cFIGYELEM! &7Új tojások lettek elrejtve! A jutalmat a tojásokra való jobklikkeléssel kapod meg. Sok sikert!"));
+        Bukkit.broadcastMessage(ColorFormat.format(getData().getEventPrefix() + " &cFIGYELEM! &7Új kincsesládák lettek elrejtve! A jutalmat a kincsesládára való jobb kattintással kapod meg. Sok sikert!"));
     }
     public void stopEvent() {
         clearEggs();
