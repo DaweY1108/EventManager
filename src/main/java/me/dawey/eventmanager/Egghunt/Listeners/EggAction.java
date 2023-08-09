@@ -33,12 +33,12 @@ public class EggAction implements Listener {
                             Reward reward = plugin.getEgghunt().getRandomReward();
                             CommandHandler.RunCommands(event.getPlayer(), reward.getCommands());
                             event.getPlayer().sendMessage(ColorFormat.format(
-                                    plugin.getEgghunt().getData().getEventPrefix() + "&7Gratulálok! megtaláltál egy húsvéti tojást! Jutalmad: " + reward.getName())
+                                    plugin.getEgghunt().getData().getEventPrefix() + "&7Gratulálok! Megtaláltál egy kincsesládát! Jutalmad: " + reward.getName())
                             );
-                            Logger.getLogger().info(event.getPlayer().getName() + " megtalalt egy tojast. Jutalma: " + reward.getName());
+                            Logger.getLogger().info(event.getPlayer().getName() + " megtalalt egy kincsesládát. Jutalma: " + reward.getName());
                         } else {
                             event.getPlayer().sendMessage(ColorFormat.format(
-                                    plugin.getEgghunt().getData().getEventPrefix() + "&cEzt a tojást már megtaláltad!"
+                                    plugin.getEgghunt().getData().getEventPrefix() + "&cEzt a kincsesládát már megtaláltad!"
                             ));
                         }
                     }
