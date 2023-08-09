@@ -36,7 +36,7 @@ public class EggPlace implements Listener {
                 event.setCancelled(true);
                 plugin.getEgghunt().addLocation(event.getBlock().getLocation());
                 event.getPlayer().sendMessage(ColorFormat.format(
-                        plugin.getEgghunt().getData().getEventPrefix() + "Sikeresen leraktál egy tojást erre a helyre: " + StringUtils.toLocString(event.getBlock().getLocation()).replace("~~", " ")
+                        plugin.getEgghunt().getData().getEventPrefix() + "Sikeresen leraktál egy kincsesládát erre a helyre: " + StringUtils.toLocString(event.getBlock().getLocation()).replace("~~", " ")
                 ));
             }
         }
