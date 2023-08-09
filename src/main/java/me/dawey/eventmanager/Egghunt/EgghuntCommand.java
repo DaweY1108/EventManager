@@ -32,12 +32,12 @@ public class EgghuntCommand implements CommandExecutor, TabCompleter {
                 if (player.hasPermission("eventmanager.egghuntadmin")) {
                     if (args[0].equalsIgnoreCase("clear")) {
                         plugin.getEgghunt().clearLocations();
-                        player.sendMessage(ColorFormat.format(plugin.getEgghunt().getData().getEventPrefix() + " &aAz összes tojás helyét törölted!"));
+                        player.sendMessage(ColorFormat.format(plugin.getEgghunt().getData().getEventPrefix() + " &aAz összes kincsesláda helyét törölted!"));
                     }
                     if (args[0].equalsIgnoreCase("start")) {
                         plugin.getEgghunt().setStoppedByAdmin(false);
                         plugin.getEgghunt().dateChecker();
-                        player.sendMessage(ColorFormat.format(plugin.getEgghunt().getData().getEventPrefix() + " &aHúsvéti event elindítva/újraindítva!"));
+                        player.sendMessage(ColorFormat.format(plugin.getEgghunt().getData().getEventPrefix() + " &aKincsesláda event sikeresen elindítva/újraindítva!"));
                     }
                     if (args[0].equalsIgnoreCase("stop")) {
                         plugin.getEgghunt().stopEvent();
@@ -46,7 +46,7 @@ public class EgghuntCommand implements CommandExecutor, TabCompleter {
                         if (plugin.getEgghunt().dateCheckTaskID != -1) {
                             Bukkit.getScheduler().cancelTask(plugin.getEgghunt().dateCheckTaskID);
                         }
-                        player.sendMessage(ColorFormat.format(plugin.getEgghunt().getData().getEventPrefix() + " &aHúsvéti event leállítva!"));
+                        player.sendMessage(ColorFormat.format(plugin.getEgghunt().getData().getEventPrefix() + " &aKincsesláda event leállítva!"));
                     }
                     if (args[0].equalsIgnoreCase("getitem")) {
                         player.getInventory().addItem(plugin.getEgghunt().getData().getLocPicker());
